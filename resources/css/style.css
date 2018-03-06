@@ -270,5 +270,21 @@ header .mobile {
 
 /* Footer */
 footer {
-    border-bottom: solid 2px #c6c1c1;
+  border-top: solid 1px #c6c1c1;
+  padding: 1rem 1.5rem;
+  border-bottom: solid 2px #c6c1c1;
+
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  flex: 1;
+}
+
+footer nav ul {
+  display: flex;
 }
