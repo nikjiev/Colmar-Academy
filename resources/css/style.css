@@ -72,7 +72,7 @@ header .logo {
   flex: 1;
 }
 
-header nav ul {
+.desktop ul {
   display: flex;
 }
 
@@ -92,8 +92,21 @@ header .icon {
   padding-left: .75rem;
 }
 
-header .mobile {
+.mobile {
   display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .desktop ul {
+    display: none;
+  }
+  .title {
+    display: none;
+  }
+
+  .mobile ul li a img {
+    display: block; // ?
+  }
 }
 
 /* Information Section One */
@@ -126,6 +139,10 @@ header .mobile {
   padding: 1.2rem 0;
   text-align: center;
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+
 }
 
 /* Information Section Two */
@@ -174,6 +191,16 @@ header .mobile {
   color: blue;
 }
 
+
+@media only screen and (max-width: 450px) {
+  .information-two .banner-image {
+    display: none;
+  }
+
+  .learn-more {
+    display: none;
+  }
+}
 
 /* Learning */
 .learning {
