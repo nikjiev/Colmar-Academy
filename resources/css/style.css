@@ -96,7 +96,7 @@ header .icon {
   display: none;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 560px) {
   .desktop ul {
     display: none;
   }
@@ -141,7 +141,31 @@ header .icon {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 450px) {
+/* Mobile Optimized */
+@media only screen and (max-width: 560px) {
+
+  .information-one {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-image {
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .learn {
+    margin: 2rem 1rem;
+    width: auto;
+  }
+
+  .learn p {
+    padding-bottom: 1.5rem;
+  }
+
+  .button {
+    background-color: #9f9b9b;
+  }
 
 }
 
@@ -191,8 +215,9 @@ header .icon {
   color: blue;
 }
 
+/* Mobile Optimized */
+@media only screen and (max-width: 560px) {
 
-@media only screen and (max-width: 450px) {
   .information-two .banner-image {
     display: none;
   }
@@ -200,6 +225,34 @@ header .icon {
   .learn-more {
     display: none;
   }
+
+  .sidebar-info {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .sidebar-item {
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .sidebar-item .content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sidebar-image-container img {
+    /* width: auto; */
+  }
+
+  .sidebar-item:hover {
+    background-color: transparent;
+  }
+
 }
 
 /* Learning */
@@ -245,6 +298,42 @@ header .icon {
   padding: 0.5rem;
 }
 
+/* Mobile Optimized  */
+@media only screen and (max-width: 560px) {
+
+  .learning {
+    background-color: white;
+    border: solid 1px #c6c1c1;
+    padding-bottom: 2rem;
+  }
+
+  .courses {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0;
+  }
+
+  .course {
+    background-color: #c6c1c1;
+    max-width: none;
+    width: 94%;
+    margin: 1rem 1rem 0.5rem 1rem;
+  }
+
+  .course-content {
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
+
+  .course-image-container {
+    display: none;
+  }
+
+  .course-content h3 {
+    display: none;
+  }
+
+}
 
 /* Thesis Exhibit */
 .exhibit {
