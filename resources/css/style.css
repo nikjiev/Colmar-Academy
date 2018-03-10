@@ -1,5 +1,4 @@
 /* Universal Styles */
-
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -48,7 +47,6 @@ html {
 }
 
 /* Header */
-
 .title {
   flex: 1;
 }
@@ -229,7 +227,7 @@ header .icon {
   color: blue;
 }
 
-/* Mobile Optimization*/
+/* Mobile Optimization */
 @media only screen and (max-width: 560px) {
 
   .information-two .banner-image {
@@ -400,7 +398,7 @@ header .icon {
   height: auto;
 }
 
-/* Mobile Optimization*/
+/* Mobile Optimization */
 @media only screen and (max-width: 560px) {
 
   .exhibit {
@@ -423,7 +421,6 @@ header .icon {
   }
 
 }
-
 
 /* Footer */
 footer {
@@ -451,6 +448,7 @@ footer nav ul {
   footer {
     border: none;
   }
+
   footer nav ul {
     display: none;
   }
