@@ -92,18 +92,22 @@ header .icon {
   padding-left: .75rem;
 }
 
-.mobile {
+.mobile ul {
   display: none;
 }
 
 /* Mobile Optimization  */
 @media only screen and (max-width: 560px) {
 
+  .nav-content img {
+    padding-right: 1rem;
+  }
+
   .desktop ul {
     display: none;
   }
 
-  .title {
+  .title, .title-two {
     display: none;
   }
 
@@ -111,6 +115,10 @@ header .icon {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .mobile ul li {
+    padding: 0 4rem 0 4rem;
   }
 
 }
