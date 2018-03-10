@@ -96,17 +96,23 @@ header .icon {
   display: none;
 }
 
+/* Mobile Optimization  */
 @media only screen and (max-width: 560px) {
+
   .desktop ul {
     display: none;
   }
+
   .title {
     display: none;
   }
 
-  .mobile ul li a img {
-    display: block; // ?
+  .mobile ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
 }
 
 /* Information Section One */
@@ -141,7 +147,7 @@ header .icon {
   font-size: 1.5rem;
 }
 
-/* Mobile Optimized */
+/* Mobile Optimization */
 @media only screen and (max-width: 560px) {
 
   .information-one {
@@ -215,7 +221,7 @@ header .icon {
   color: blue;
 }
 
-/* Mobile Optimized */
+/* Mobile Optimization*/
 @media only screen and (max-width: 560px) {
 
   .information-two .banner-image {
@@ -245,8 +251,12 @@ header .icon {
     padding-bottom: 2rem;
   }
 
-  .sidebar-image-container img {
-    /* width: auto; */
+  .sidebar-image-container {
+    display: none;
+  }
+
+  .sidebar-image-container-mobile img {
+
   }
 
   .sidebar-item:hover {
@@ -298,7 +308,7 @@ header .icon {
   padding: 0.5rem;
 }
 
-/* Mobile Optimized  */
+/* Mobile Optimization */
 @media only screen and (max-width: 560px) {
 
   .learning {
@@ -310,7 +320,6 @@ header .icon {
   .courses {
     flex-direction: column;
     align-items: flex-start;
-
     padding: 0;
   }
 
@@ -383,13 +392,36 @@ header .icon {
   height: auto;
 }
 
+/* Mobile Optimization*/
+@media only screen and (max-width: 560px) {
+
+  .exhibit {
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+  }
+
+  .video-exhibit {
+    min-width: 100%;
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  .main-paragraph {
+    display: none;
+  }
+
+  .sidebar-info-exhibit {
+    display: none;
+  }
+
+}
+
 
 /* Footer */
 footer {
   border-top: solid 1px #c6c1c1;
   padding: 1rem 1.5rem;
   border-bottom: solid 2px #c6c1c1;
-
 }
 
 .footer {
@@ -403,4 +435,16 @@ footer {
 
 footer nav ul {
   display: flex;
+}
+
+/* Mobile Optimization */
+@media only screen and (max-width: 560px) {
+
+  footer {
+    border: none;
+  }
+  footer nav ul {
+    display: none;
+  }
+
 }
