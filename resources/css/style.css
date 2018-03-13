@@ -221,6 +221,10 @@ header .icon {
   height: auto;
 }
 
+.sidebar-image-container-mobile img {
+  display: none;
+}
+
 .read-more a {
   font-size: 1.2rem;
   line-height: 1.5;
